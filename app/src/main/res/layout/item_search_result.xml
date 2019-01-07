@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvItemResult"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="200dp"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:id="@+id/rlContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@id/tvNameOfFilm"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Title of the film"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="10dp"
+            android:layout_toStartOf="@+id/ivPosterFilm"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toLeftOf="@+id/ivPosterFilm"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp" android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/tvDirectorName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Director's name"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="14dp"
+            android:layout_below="@+id/tvNameOfFilm"
+            android:layout_toStartOf="@+id/ivPosterFilm"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_toLeftOf="@+id/ivPosterFilm"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp" android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/tvYearofRelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018"
+            android:textSize="14dp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="14dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/tvDirectorName"
+            android:layout_toStartOf="@+id/ivPosterFilm"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="14dp"
+            android:layout_toLeftOf="@+id/ivPosterFilm"
+            android:layout_marginBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/ivPosterFilm"
+            android:layout_width="130dp"
+            android:layout_height="170dp"
+            android:src="@drawable/images"
+            android:contentDescription="@null"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentTop="true"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
